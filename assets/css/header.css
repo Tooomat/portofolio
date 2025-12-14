@@ -5,6 +5,7 @@ header {
 header {
     padding: 1.3rem; 
     position: relative;
+    margin: 0;
 }
 
 .header .name {

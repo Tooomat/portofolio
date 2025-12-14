@@ -44,6 +44,11 @@
 
 @media (max-width: 664px) {
     .home-container {
-        margin: 0 ;
+        margin: 0 2rem 0 2rem ;
+    }
+
+    .home-container .greeting {
+        font-size: 1rem;
+        font-weight: 700;
     }
 }
