@@ -1,0 +1,77 @@
+:root {
+  --bg-colour: #000000;
+  --text-colour-primary: #ffffff;
+  --text-colour-secondary: rgb(153, 153, 153);
+  --text-colour-secondary-transition: rgb(192, 190, 190);
+  --colour-one: rgba(190, 0, 253, 0.91);
+  --colour-one-transition: rgba(118, 20, 151, 0.91);
+  --colour-two: rgba(0, 253, 89, 0.985);
+  --colour-two-transparent: rgba(0, 253, 55, 0.173);
+  --colour-three: #363636b0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    background-color: var(--bg-colour);
+}
+
+body {
+    color: var(--text-colour-primary);
+}
+
+a {
+    color: var(--text-colour-primary);
+}
+
+div {
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+section {
+    padding: 3rem 4rem 0 3rem;
+}
+
+section .title {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    background-color: var(--text-colour-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 0.5em 0.9em 0.5em 0.9em;
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+        
+    transition: 
+    transform 0.25s ease,
+    baground-color 0.25s ease;
+}
+
+.btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 493px) {
+    section {
+        padding: 3rem 1rem 0 3rem;
+    }
+}

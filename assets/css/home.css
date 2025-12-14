@@ -1,0 +1,49 @@
+.home-container {
+    margin: 0 5.5rem;
+}
+
+.home-container .greeting {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.home-container .decription {
+    font-size: 0.9rem;
+    color: var(--text-colour-secondary);
+    text-align: justify;
+}
+
+.home-container .social-media svg{
+    color: black;
+}
+
+.home-container .social-media{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+}
+
+.home-container .social-media .btn:hover {
+    background-color: var(--text-colour-secondary-transition);
+    transform: scale(105%, 105%);
+}
+
+.home-container .resume .btn{
+    background-color: var(--colour-one);
+    width: 9rem;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.home-container .resume .btn:hover {
+    background-color: var(--colour-one-transition);
+    transform: scale(105%, 105%);
+    color: aliceblue;
+}
+
+@media (max-width: 664px) {
+    .home-container {
+        margin: 0 ;
+    }
+}

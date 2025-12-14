@@ -1,0 +1,17 @@
+.quotes {
+    margin: 1rem 0;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(40, 40, 40);
+}
+
+.quotes h1 {
+    font-size: 2rem;
+}
+
+.quotes h1 span {
+    font-size: 3rem;
+    color: var(--colour-two);
+}

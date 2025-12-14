@@ -1,0 +1,106 @@
+.technical-skill {
+  padding: 3rem;
+  overflow: hidden;
+}
+
+.technical-skill h2 {
+  margin-bottom: 1rem;
+}
+
+.skills-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Gradient overlay untuk efek fade di ujung */
+.skills-wrapper::before,
+.skills-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.skills-wrapper::before {
+  left: 0;
+}
+
+.skills-wrapper::after {
+  right: 0;
+
+}
+
+.skills-track {
+  display: flex;
+  gap: 3rem;
+  width: max-content;
+  animation: slideRight 10s linear infinite;
+  will-change: transform;
+}
+
+.skills-track img {
+  width: 3rem;
+  height: auto;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+  flex-shrink: 0;
+}
+
+.skills-track img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* Animasi yang lebih smooth */
+@keyframes slideRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-50% - 1.5rem)); /* Menyesuaikan dengan gap */
+  }
+}
+
+/* Alternatif: Animasi dengan pause di tengah (jika ingin efek berhenti sebentar) */
+@keyframes slideRightWithPause {
+  0% {
+    transform: translateX(0);
+  }
+  90% {
+    transform: translateX(calc(-50% - 1.5rem));
+  }
+  100% {
+    transform: translateX(calc(-50% - 1.5rem));
+  }
+}
+
+/* Untuk performa lebih baik di perangkat mobile */
+@media (max-width: 768px) {
+  .skills-track {
+    gap: 2rem;
+    animation-duration: 15s;
+  }
+  
+  .skills-track img {
+    width: 2.5rem;
+  }
+  
+  .skills-wrapper::before,
+  .skills-wrapper::after {
+    width: 50px;
+  }
+}
+
+.skills-track.smooth {
+  animation-timing-function: linear;
+}
+
+@supports (animation: slideRight 20s linear infinite) {
+  .skills-track {
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+}

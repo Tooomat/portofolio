@@ -1,0 +1,146 @@
+.container-row {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding: 0;
+    margin: 0;
+
+    gap: 5px;
+}
+
+.container-row .long-card {
+    background-color: var(--colour-three);
+    padding: 0 0.5rem 0 0.5rem;
+    margin: 0.1rem 3rem;
+    width: 100%;
+    border-radius: 0.7rem;
+
+    transition: transform 0.25s ease, baground-color 0.25s ease;
+}
+
+.container-row .long-card:hover {
+    transform: skewX(-7deg);
+    background-color: rgba(59, 59, 59, 0.777);
+}
+
+.container-row .long-card .content {
+    background-color: var(--colour-three);
+    border-radius: 0.7rem;
+    padding: 0 0.5rem 0 0.5rem;
+    margin: 0.5rem 0 0.5rem 0;
+
+    gap: 3rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-row .long-card .content .source {
+    background-color: transparent;
+    width: 8.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.3rem;
+    margin: 0;
+}
+
+.container-row .long-card .content .source .btn {
+    background-color: var(--colour-one);
+
+    font-size: 1rem;
+    width: 100%;
+    height: 2.6rem;
+
+    gap: 0.6rem;
+}
+
+.container-row .long-card .content .source .btn:hover {
+    background-color: var(--colour-one-transition);
+    color: aliceblue;
+}
+
+.container-row .long-card .content .information {
+    background-color: transparent;
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+
+    padding: 0;
+    margin: 0;
+
+    gap: 0.7rem;
+}
+
+.container-row .long-card .content .information .program, .image {
+    margin: 0;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.container-row .long-card .content .information .image img {
+    padding: 0.5rem;
+    margin: 0;
+    
+    height: 70px;
+    width: 70px;
+
+    border-radius: 0.7rem;
+}
+
+.container-row .long-card .content .information .program h4 {
+    font-size: 1rem;
+}
+
+.container-row .long-card .content .information .program h5 {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.container-row .long-card .content .information .program h6 {
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+@media (max-width: 800px) {
+    .container-row .long-card .content {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 0;
+    }
+
+    .container-row .long-card .content .source {
+        justify-content: flex-start;
+    }
+}
+
+
+@media (max-width: 493px) {
+    .container-row .long-card {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        width: 600px;
+        height: 210px;
+    }
+
+    .container-row .long-card .content {
+        width: 100%;
+        height: 190px;
+    }
+}
+
+@media (max-width: 430px) {
+        .container-row .long-card {
+        height: 340px;
+    }
+
+    .container-row .long-card .content {
+        height: 320px;
+    }
+}

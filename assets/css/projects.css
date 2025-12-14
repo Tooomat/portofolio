@@ -1,0 +1,144 @@
+.project .sub-project {
+    border-left: 6px solid var(--colour-two);
+    padding: 0.5rem;
+    margin: 0 5.5rem;
+    background-color: rgb(0, 0, 0);
+}
+
+.project .container-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.container-card {
+    padding: 0;
+    margin: 0 5.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:  center;
+    gap: 1.5rem;
+    background-color: rgb(0, 0, 0);
+}
+
+.container-card .card {
+    background-color: var(--colour-three);
+    padding: 0.5rem;
+    border-radius: 0.7rem;
+
+    /* FLEXBOX RESPONSIVE */
+    flex: 1 1 300px;        
+    max-width: 210px;           
+    min-height: auto;  
+     
+    transition: 
+    transform 0.25s ease,
+    baground-color 0.25s ease;
+}
+
+.container-card .card:hover {
+    background-color: #2f2f2fb0;
+    transform: scale(105%, 105%);
+}
+
+.container-card .card .content{
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0;
+    padding: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.container-card .card .content h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+.container-card .card .content .tools {
+    margin: 1.2rem 0 0 0;
+}
+
+.container-card .card .content .tools h6 {
+    background-color: rgba(0, 0, 255, 0);
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.container-card .card .content .tools h6 span{
+    background-color: var(--colour-two-transparent);
+    color: aquamarine;
+    margin: 0;
+    padding: 0.05rem 0.4rem 0.05rem 0.4rem;
+    border-radius: 0.2rem;
+
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.container-card .card .content .desc p{
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+
+.container-card .card .content .source {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: space-around;
+
+    gap: 12px;
+    padding: 0;
+    margin: 0.5rem;
+    margin-top: auto;
+}
+
+.source .btn svg {
+    width: 15px;
+    height: 15px;
+}
+
+.container-card .card .content .source .btn {
+    background-color: var(--colour-one);
+     
+    gap: 5px;
+
+    font-size: 0.7rem;
+    font-weight: 500;
+
+    width: 4.5rem;
+    height: 2rem;
+}
+
+.container-card .card .content .source .btn:hover {
+    background-color: var(--colour-one-transition);
+    color: aliceblue;
+}
+
+@media (max-width: 493px) {
+    .project .sub-project {
+        padding: 0;
+
+    }
+
+    .container-card {
+        margin: 0;
+    }
+
+    .container-card .card {
+        width: 200px;      
+        height: auto;     
+    }
+}
