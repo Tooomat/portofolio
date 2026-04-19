@@ -5,3 +5,7 @@ footer .credit {
     justify-content: center;
     text-align: center;
 }
+
+footer .credit span {
+    color: var(--colour-one);
+}

@@ -46,7 +46,6 @@ section .title {
 }
 
 .btn{
-    background-color: var(--text-colour-secondary);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,8 +53,9 @@ section .title {
     padding: 0.5em 0.9em 0.5em 0.9em;
     width: 5rem;
     height: 2.5rem;
-    border-radius: 2rem;
-        
+    border-radius: 0.7rem;
+    cursor:pointer;
+
     transition: 
     transform 0.25s ease,
     baground-color 0.25s ease;

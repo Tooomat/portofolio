@@ -36,6 +36,11 @@
         <a href="#" class="position">
             Fresh Graduate 2021-2025 | Backend
         </a>
+        <br>
+        <div class="hero-tag">
+            <span style="width:6px;height:6px;background:#1D9E75;border-radius:50%;display:inline-block;"></span>
+            Available for opportunities
+        </div>
     </header>
 
     <!-- Header end -->
@@ -68,6 +73,7 @@
                     <a href="https://github.com/Tooomat">
                         <i data-feather="github"></i>
                     </a>
+
                 </button>
 
                 <button class="btn linkedin">
@@ -126,22 +132,31 @@
     </section>
     <!-- skill end -->
 
-
+        <!-- Projects -->
     <section class="project">
         <div class="title">
             <h2>Project</h2>
         </div>
 
-        <div class="container-column">
-            <div class="sub-project">
+        <!-- Tab filter -->
+        <div class="project-tabs">
+            <button class="btn active" data-filter="all">All</button>
+            <button class="btn" data-filter="backend">Backend</button>
+            <button class="btn" data-filter="data">Data Analysis</button>
+            <button class="btn" data-filter="ml">Machine Learning</button>
+        </div>
+
+        <div class="container-column" id="projects">
+
+            <!-- BACKEND -->
+            <div class="sub-project" data-group="backend">
                 <h3>Back-end</h3>
             </div>
 
-            <div class="container-card">
-                <div class="card">
+            <div class="container-card" data-group="backend">
+                <div class="card" data-cat="backend">
                     <div class="content">
                         <h5>Spring Boot rest api</h5>
-
                         <div class="tools">
                             <h6>
                                 <span>Spring Boot</span>
@@ -151,16 +166,9 @@
                                 <span>JPA ORM</span>
                             </h6>
                         </div>
-
                         <div class="desc">
-                            <p>
-                                A RESTful API built with Java using the Spring Boot framework. 
-                                It consists of three main entities: User, Contact, and Address. 
-                                Provides complete CRUD operations including POST, GET, PUT, PATCH, and DELETE, 
-                                along with unit testing and JPA for database management.
-                            </p>
+                            <p>A RESTful API built with Java using the Spring Boot framework. It consists of three main entities: User, Contact, and Address. Provides complete CRUD operations including POST, GET, PUT, PATCH, and DELETE, along with unit testing and JPA for database management.</p>
                         </div>
-                            
                         <div class="source">
                             <button class="btn code-github">
                                 <a href="https://github.com/Tooomat/spring-restful-api.git">
@@ -171,12 +179,10 @@
                         </div>
                     </div>
                 </div>
-                
-            
-                <div class="card">
+
+                <div class="card" data-cat="backend">
                     <div class="content">
                         <h5>Go Online Shop</h5>
-
                         <div class="tools">
                             <h6>
                                 <span>Golang</span>
@@ -186,15 +192,9 @@
                                 <span>Docker</span>
                             </h6>
                         </div>
-
                         <div class="desc">
-                            <p>
-                                A RESTful API for an online shop built with Golang using a Domain-Driven Design (DDD) architecture. 
-                                Developed with the Fiber framework, featuring authentication and authorization mechanisms, 
-                                Redis for caching, and MySQL as the primary database.
-                            </p>
+                            <p>A RESTful API for an online shop built with Golang using a Domain-Driven Design (DDD) architecture. Developed with the Fiber framework, featuring authentication and authorization mechanisms, Redis for caching, and MySQL as the primary database.</p>
                         </div>
-                            
                         <div class="source">
                             <button class="btn code-github">
                                 <a href="https://github.com/Tooomat/go-online-shop/tree/master">
@@ -205,11 +205,10 @@
                         </div>
                     </div>
                 </div>
-                
-                <div class="card">
-                    <div class="content">
-                        <h5>Backend Serba Web App (On going)</h5>
 
+                <div class="card" data-cat="backend">
+                    <div class="content">
+                        <h5>Backend Serba Web App <span class="badge-ongoing">On going</span></h5>
                         <div class="tools">
                             <h6>
                                 <span>TypeScript</span>
@@ -222,17 +221,12 @@
                                 <span>Sender</span>
                             </h6>
                         </div>
-
                         <div class="desc">
                             <p>
-                                A RESTful API backend for a local freelance service marketplace, 
-                                built with Node.js and Express. Features include job posting, 
-                                job applications with real-time status updates, review system, 
-                                Google OAuth2 authentication, email verification, in-app notifications, 
-                                background job queues, and security hardening aligned with OWASP Top 10.
+                                A RESTful API backend for a local freelance service marketplace. Features include job posting, job applications with real-time status updates, 
+                                review system, Google OAuth2 authentication, email verification, in-app notifications, background job queues, and security hardening aligned with OWASP Top 10.
                             </p>
                         </div>
-                            
                         <div class="source">
                             <button class="btn">
                                 <a href="https://github.com/Tooomat/serba-backend">
@@ -240,7 +234,6 @@
                                 </a>
                                 Code
                             </button>
-
                             <button class="btn">
                                 <a href="">
                                     <i data-feather="link"></i>
@@ -252,32 +245,27 @@
                 </div>
             </div>
 
-
-            <div class="sub-project">
-                <h3>Data Analys</h3>
+            <!-- DATA ANALYSIS -->
+            <div class="sub-project" data-group="data">
+                <h3>Data Analysis</h3>
             </div>
 
-            <div class="container-card">
-                <div class="card">
+            <div class="container-card" data-group="data">
+                <div class="card" data-cat="data">
                     <div class="content">
                         <h5>Bike Sharing Dataset</h5>
-
                         <div class="tools">
                             <h6>
                                 <span>Python</span>
                                 <span>Pandas</span>
-                                <span>Matplotlib </span>
+                                <span>Matplotlib</span>
                                 <span>Seaborn</span>
                                 <span>Streamlit</span>
                             </h6>
                         </div>
-
                         <div class="desc">
-                            <p>
-                                An interactive data analysis dashboard built using Streamlit to analyze consumer behavior and bicycle sales performance.
-                            </p>
+                            <p>An interactive data analysis dashboard built using Streamlit to analyze consumer behavior and bicycle sales performance.</p>
                         </div>
-                            
                         <div class="source">
                             <button class="btn">
                                 <a href="https://github.com/Tooomat/dashboard-streamlit-dicoding">
@@ -285,9 +273,8 @@
                                 </a>
                                 Code
                             </button>
-
                             <button class="btn">
-                                <a href=" https://dashboardpy-analys.streamlit.app/">
+                                <a href="https://dashboardpy-analys.streamlit.app/">
                                     <i data-feather="link"></i>
                                 </a>
                                 Live
@@ -295,12 +282,10 @@
                         </div>
                     </div>
                 </div>
-                
-                <!-- card 2 -->
-                <div class="card">
+
+                <div class="card" data-cat="data">
                     <div class="content">
                         <h5>Data Spotify</h5>
-
                         <div class="tools">
                             <h6>
                                 <span>Numpy</span>
@@ -309,13 +294,9 @@
                                 <span>Seaborn</span>
                             </h6>
                         </div>
-
                         <div class="desc">
-                            <p>
-                                A data analysis project focused on spotify listening trends using python and dataset from kaggle website
-                            </p>
+                            <p>A data analysis project focused on Spotify listening trends using Python and dataset from Kaggle website.</p>
                         </div>
-                            
                         <div class="source">
                             <button class="btn code-github">
                                 <a href="https://github.com/Tooomat/analisis-data-spotify">
@@ -325,38 +306,33 @@
                             </button>
                         </div>
                     </div>
-                </div>          
+                </div>
             </div>
 
-
-            <div class="sub-project">
+            <!-- MACHINE LEARNING -->
+            <div class="sub-project" data-group="ml">
                 <h3>Machine Learning</h3>
             </div>
 
-            <div class="container-card">
-                <div class="card">
+            <div class="container-card" data-group="ml">
+                <div class="card" data-cat="ml">
                     <div class="content">
-                        <h5>Vegetables Desease Detection - CAPSTONE bangkit</h5>
-
+                        <h5>Vegetables Disease Detection - CAPSTONE Bangkit</h5>
                         <div class="tools">
                             <h6>
                                 <span>Python</span>
                                 <span>Tensorflow</span>
                                 <span>MobileNetV2</span>
                                 <span>Pandas</span>
-                                <span>Matplotlib </span>
+                                <span>Matplotlib</span>
                                 <span>Seaborn</span>
-                                <span>Jupyter notebook</span>
-                                <span>Google coolab</span>
+                                <span>Jupyter Notebook</span>
+                                <span>Google Colab</span>
                             </h6>
                         </div>
-
                         <div class="desc">
-                            <p>
-                                Mobile app using TensorFlow to detect freshness of vegetables. Built with Kotlin  (MD), Firebase (CC), and Python (ML). for the dataset our team collected it ourselves. 
-                            </p>
+                            <p>Mobile app using TensorFlow to detect freshness of vegetables. Built with Kotlin (MD), Firebase (CC), and Python (ML). The dataset was collected by our team.</p>
                         </div>
-                            
                         <div class="source">
                             <button class="btn">
                                 <a href="https://github.com/VetionTeam">
@@ -367,17 +343,15 @@
                         </div>
                     </div>
                 </div>
-                
-                <!-- card 2 -->
-                <div class="card">
-                    <div class="content">
-                        <h5>Corn Deseases</h5>
 
+                <div class="card" data-cat="ml">
+                    <div class="content">
+                        <h5>Corn Diseases</h5>
                         <div class="tools">
                             <h6>
                                 <span>Python</span>
                                 <span>Tensorflow</span>
-                                <span>Jupyter notebook</span>
+                                <span>Jupyter Notebook</span>
                                 <span>Numpy</span>
                                 <span>Pandas</span>
                                 <span>Matplotlib</span>
@@ -385,13 +359,9 @@
                                 <span>Streamlit</span>
                             </h6>
                         </div>
-
                         <div class="desc">
-                            <p>
-                                Classification of Corn Plant Diseases Based on Leaf Images. Using Streamlit as a detection test.
-                            </p>
+                            <p>Classification of Corn Plant Diseases Based on Leaf Images. Using Streamlit as a detection test.</p>
                         </div>
-                            
                         <div class="source">
                             <button class="btn code-github">
                                 <a href="https://github.com/Tooomat/analisis-data-spotify">
@@ -399,20 +369,21 @@
                                 </a>
                                 Code
                             </button>
-
                             <button class="btn">
                                 <a href="https://corn-deaseas.streamlit.app/">
                                     <i data-feather="link"></i>
                                 </a>
-                                LIve
+                                Live
                             </button>
                         </div>
                     </div>
-                </div>          
+                </div>
             </div>
 
         </div>
     </section>
+    <!-- project end -->
+
     <!-- project end -->
 
     <!-- certification start -->
@@ -637,7 +608,12 @@
     <!-- footer start -->
     <footer>
         <div class="credit">
-            <p>&copy; 2025 Created by <a href="">Hadi Dwi Ardiansyah.</a> All rights reserved. </p>
+            <p>&copy; 2026 Created by 
+                <a href="">
+                    <span>Hadi Dwi Ardiansyah.</span>
+                </a> 
+                All rights reserved. 
+            </p>
         </div>
     </footer>
     <!-- footer end -->
@@ -645,6 +621,35 @@
     <!-- feather icon -->
     <script>
         feather.replace();
+
+        const tabBtns = document.querySelectorAll('.project-tabs .btn');
+        const cardGroups = document.querySelectorAll('.container-card[data-group]');
+        const subHeaders = document.querySelectorAll('.sub-project[data-group]');
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                tabBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.dataset.filter;
+
+                cardGroups.forEach(group => {
+                    if (filter === 'all' || group.dataset.group === filter) {
+                        group.classList.remove('hidden');
+                    } else {
+                        group.classList.add('hidden');
+                    }
+                });
+
+                subHeaders.forEach(header => {
+                    if (filter === 'all' || header.dataset.group === filter) {
+                        header.classList.remove('hidden');
+                    } else {
+                        header.classList.add('hidden');
+                    }
+                });
+            });
+        });
     </script>
 </body>
 </html>

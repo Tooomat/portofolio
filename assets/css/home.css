@@ -14,20 +14,25 @@
 }
 
 .home-container .social-media svg{
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .home-container .social-media{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 5%;
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+}
+
+.home-container .social-media .btn{
+    background-color: black;
+    border: 2px solid rgb(85, 83, 78);
 }
 
 .home-container .social-media .btn:hover {
-    background-color: var(--text-colour-secondary-transition);
     transform: scale(105%, 105%);
+    color: rgb(0, 0, 0);
 }
+
 
 .home-container .resume .btn{
     background-color: var(--colour-one);
@@ -40,6 +45,57 @@
     background-color: var(--colour-one-transition);
     transform: scale(105%, 105%);
     color: aliceblue;
+}
+
+/* Tab Filter */
+.project-tabs {
+    display: flex;
+    gap: 8px;
+    flex-wrap: nowrap;
+    margin-bottom: 2rem;
+    padding: 0 6rem;
+}
+
+.project .project-tabs .btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 7px 18px;
+    border: 2px solid rgb(85, 83, 78);
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    width: auto;         
+    white-space: nowrap;
+    transition: all 0.2s ease;
+}
+
+.project .project-tabs .btn:hover {
+    transform: scale(105%, 105%);
+}
+
+.project .project-tabs .btn.active {
+    background: var(--colour-one);
+    border-color: #ffffff00;
+    color: #000000;
+}
+
+/* Badge ongoing */
+.badge-ongoing {
+    font-size: 10px;
+    font-weight: 700;
+    background: #FAEEDA;
+    color: #633806;
+    padding: 2px 8px;
+    border-radius: 10px;
+    vertical-align: middle;
+    margin-left: 6px;
+}
+
+/* Hide groups when filtered */
+.container-card.hidden,
+.sub-project.hidden {
+    display: none;
 }
 
 @media (max-width: 664px) {
