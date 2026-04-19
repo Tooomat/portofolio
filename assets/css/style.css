@@ -63,8 +63,12 @@ section .title {
 
 .btn a {
     display: flex;
+    gap: 4px;
     align-items: center;
     justify-content: center;
+}
+.btn a span{
+    color: black;
 }
 
 @media (max-width: 493px) {
