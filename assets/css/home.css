@@ -20,7 +20,7 @@
 .home-container .social-media{
     display:flex;
     gap:8px;
-    flex-wrap:wrap;
+    flex-wrap:wrap; 
 }
 
 .home-container .social-media .btn{

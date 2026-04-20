@@ -1,3 +1,9 @@
+.project .project-tabs {
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+}
+
 .project .sub-project {
     border-left: 6px solid var(--colour-two);
     padding: 0.5rem;
